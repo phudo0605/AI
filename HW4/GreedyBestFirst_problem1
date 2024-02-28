@@ -115,7 +115,7 @@ class MazeGame:
                 if 0 <= new_pos[0] < self.rows and 0 <= new_pos[1] < self.cols and not self.cells[new_pos[0]][new_pos[1]].is_wall:
                 
                     #### The cost of moving to a new position is 1 unit
-                    new_g = (current_cell.g + 1)*0
+                    new_g = 0
                     
                     
                     if new_g < self.cells[new_pos[0]][new_pos[1]].g:
